@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables - Assignment</title>
+  </head>
+  <body>
+    <div style="border: 2px solid black; padding: 12px">
+      <h2>Redeclaring a Variable Using let</h2>
+      <p>Hello</p>
+    </div>
+
+    <div style="border: 2px solid black; padding: 12px; margin-top: 12px">
+      <h2>JavaScript const</h2>
+      <p id="arrPr"></p>
+      <p id="arrPrMd"></p>
+    </div>
+
+    <script>
+      let a = 10;
+      console.log(a);
+      if (a == 10) {
+        let a = 20;
+      }
+      console.log(a);
+
+      const arr = ["Iphone", "Redmi", "Oppo"];
+      document.getElementById("arrPr").innerHTML = arr;
+      arr.pop();
+      arr.pop();
+      arr.push("Oneplus");
+      arr.push("Oppo");
+      arr.push("Motto");
+      document.getElementById("arrPrMd").innerHTML = arr;
+    </script>
+  </body>
+</html>
